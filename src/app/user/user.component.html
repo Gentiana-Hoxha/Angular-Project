@@ -1,0 +1,17 @@
+<div *ngIf="isLogged" class="table-users">
+    <table>
+        <tbody>
+        <tr>
+        <td>Frist Name</td>
+        <td>Last Name</td>
+        <td>Email</td>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td>{{user.first_name}}</td>
+            <td>{{user.last_name}}</td>
+            <td>{{user.email}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+  

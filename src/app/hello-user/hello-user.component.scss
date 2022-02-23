@@ -1,0 +1,22 @@
+.user-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    &-initials{
+        height: 2.75rem;
+        width: 2.75rem;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #230a0a85;
+        span{
+            font-size: 1.4rem;
+        }
+    }
+    &-greeting{
+        font-size: 18px;
+    }
+}

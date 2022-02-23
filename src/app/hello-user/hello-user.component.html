@@ -1,0 +1,6 @@
+<div *ngIf="userName" class="user-info">
+    <div class="user-info-initials" [ngStyle]="{background: colorRandom}">
+        <span>{{userName.charAt(0)}}</span>
+    </div>
+    <p class="user-info-greeting" >{{getRandomGreeting()}}, {{userName}}</p>
+</div>

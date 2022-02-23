@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , Input} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'StudyProject2';
+  title = 'StudyProject';
+  // userLogged = true;
+
+  userLogged: any = localStorage.getItem("userLogged");
+
+
+  // handleLogin(value: boolean) {
+  //   console.log(" value ", value);
+  //   this.userLogged = value;
+  // }
 }
+
+
